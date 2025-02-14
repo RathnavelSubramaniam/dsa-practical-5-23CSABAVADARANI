@@ -8,7 +8,6 @@ this.data = data;
 this.next = null;
         }
     }
-
     Node head = null;
     Node tail = null;
    
@@ -40,6 +39,14 @@ scanner.close();
 int length() 
     {
   //Type your code here
+  int count=0;
+  Node current=head;
+
+  while(current!=null){
+    count++;
+    current=current.next;
+  }
+  return count;
     }
 public void displayList() {
        Node current = head;
